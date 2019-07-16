@@ -1,0 +1,12 @@
+version: '3'
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    container_name: liberty_db
+    environment:
+      POSTGRES_USER: liberty
+      POSTGRES_PASSWORD: liberty_sailing
+      POSTGRES_DB: liberty_db
+    ports:
+      - 5432:5432
